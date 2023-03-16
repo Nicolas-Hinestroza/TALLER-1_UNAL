@@ -83,7 +83,27 @@ Este es un codigo muy sencillo ya que lo unico que hay que hacer es definir las 
 - La potencia del mayor número elevado al menor número.
 - La raíz cúbica del menor número.
 
+
 - **8. Programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.**
+
+Para este codigo se implemento la estructura if-elif-else, Cuando el usuario diguite una frecuencia el programa logre identificar que tipo de fecuencia es segun el proceso que tenga cada opcion. 
+
+
+           HZ = float(input("ingresa una frecuencia de onda en HZ: "))
+           if HZ <= 10**4:
+              print ("tu unidad de frecuencia se encuentra en el rango del radio ")
+           elif HZ > 10**4 and HZ <= 10**8:
+              print ("tu unidad de frecuencia se encuentra en el rango del Microondas ")
+           elif HZ > 10**8 and HZ <= 10**12:
+              print ("tu unidad de frecuencia se encuentra en el rango del infrarrojo ")
+           elif HZ > 10**12 and HZ <= 10**15:
+              print ("tu unidad de frecuencia se encuentra en el rango visible por el ser humano ")
+           elif HZ > 10**15 and HZ <= 10**16:
+              print ("tu unidad de frecuencia se encuentra en el rango ultravioleta ")
+           elif HZ > 10**16 and HZ <= 10**18:
+              print ("tu unidad de frecuencia se encuentra en el rango de los rayos X")
+           else:
+              print ("tu unidad de frecuencia se encuentra en el rango de los rayos gama ")
 
 - **9. Programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.**
 
